@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameSet_Assingment_III" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy5-Yg-Q6y">
+                                <rect key="frame" x="161.5" y="541.5" width="52" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eqU-GD-zV6">
+                                <rect key="frame" x="44.5" y="609" width="287" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-Xv-0Ys">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="50"/>
+                                        <fontDescription key="fontDescription" name="Courier-BoldOblique" family="Courier" pointSize="28"/>
+                                        <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXP-tA-36f">
+                                        <rect key="frame" x="21" y="0.0" width="39" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title=" 🍡"/>
+                                        <connections>
+                                            <action selector="iphoneOrHanami" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9v-kv-8hT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k62-NY-gmF">
+                                        <rect key="frame" x="64" y="0.0" width="78" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="0.7803693413734436" green="0.82622599601745605" blue="0.074428580701351166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-ig-V6g">
+                                        <rect key="frame" x="146" y="0.0" width="69" height="50"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="26"/>
+                                        <state key="normal" title="69➙3">
+                                            <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="more3cards" destination="BYZ-38-t0r" eventType="touchUpInside" id="5LB-Yj-6rg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXI-TW-pSA">
+                                        <rect key="frame" x="219" y="0.0" width="47" height="50"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="26"/>
+                                        <state key="normal" title="New">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tu-bb-Vwh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNt-wX-rQq">
+                                        <rect key="frame" x="270" y="0.0" width="17" height="50"/>
+                                        <fontDescription key="fontDescription" name="Courier-BoldOblique" family="Courier" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6K-uo-tQV" customClass="BoardView" customModule="GameSet_Assingment_III" customModuleProvider="target">
+                                <rect key="frame" x="11" y="30" width="353" height="471"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eqU-GD-zV6" firstAttribute="top" secondItem="Zy5-Yg-Q6y" secondAttribute="bottom" constant="10" id="0St-BU-zHs"/>
+                            <constraint firstItem="A6K-uo-tQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="4jT-m7-HAm"/>
+                            <constraint firstItem="Zy5-Yg-Q6y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7fo-aj-QwD"/>
+                            <constraint firstItem="eqU-GD-zV6" firstAttribute="top" secondItem="A6K-uo-tQV" secondAttribute="bottom" constant="108" id="9hZ-jb-ySp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6K-uo-tQV" secondAttribute="trailing" constant="11" id="L2C-Zh-G7A"/>
+                            <constraint firstItem="A6K-uo-tQV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jBk-yp-tdq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eqU-GD-zV6" secondAttribute="bottom" constant="8" id="lpf-im-1kB"/>
+                            <constraint firstItem="eqU-GD-zV6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tQ6-Br-cY8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="allSetsOrTimer" destination="k62-NY-gmF" id="smc-T1-jtd"/>
+                        <outlet property="boardView" destination="A6K-uo-tQV" id="ddU-Fa-lFw"/>
+                        <outlet property="currentDeck" destination="9Ya-ig-V6g" id="a1G-3i-Fil"/>
+                        <outlet property="iphoneOrDango" destination="jXP-tA-36f" id="yOU-ZW-9YN"/>
+                        <outlet property="iphoneScoreOrHints" destination="rPb-Xv-0Ys" id="88Z-fb-epo"/>
+                        <outlet property="score" destination="WNt-wX-rQq" id="Fu2-hK-yDu"/>
+                        <outlet property="tooglePlayers" destination="Zy5-Yg-Q6y" id="zhU-vD-Ckl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
